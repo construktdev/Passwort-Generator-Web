@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Passwort Generator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div id="box" class="box">
+    <h1 class="title">Passwort Generator</h1>
+    <p>Wähle die Länge deines Passworts aus und klicke generieren!</p>
+    <div class="slidecontainer">
+      <input type="range" min="5" max="30" value="12" class="slider" id="passwordlength">
+    </div>
+    <p class="centered-paragraph">Passwort Länge: <span id="sliderTooltip">12</span></p>
+    <div class="selection-container">
+      <p>Was soll im Password entahlten sein?</p>
+      <input type="checkbox" id="lowercase" name="selection" value="lowercase">
+      <label for="lowercase">Lowercase Characters&nbsp;</label>
+      <input type="checkbox" id="uppercase" name="selection" value="uppercase">
+      <label for="uppercase">Uppercase Characters&nbsp;&nbsp;&nbsp;</label>
+      <input type="checkbox" id="numbers" name="selection" value="numbers">
+      <label for="numbers">Numbers&nbsp;&nbsp;&nbsp;</label>
+      <input type="checkbox" id="special" name="selection" value="special">
+      <label for="special">Special Characters</label>
+      <button type="submit" id="generate" class="button">Generieren</button>
+    </div>
+    <p class="centered-paragraph">Generiertes Passwort:&nbsp; <span id="pwoutput">Klicke auf generieren</span></p>
+    <script src="js/app.js"></script>
+  </div>
+</body>
+</html>
